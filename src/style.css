@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* 1. Animasi Masuk Saat Web Dibuka (Lebih Lembut & Smooth) */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* 2. Animasi Melayang Naik-Turun Berkala Setelah Masuk */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Gabungkan keduanya dalam class kustom */
+.animate-hero-appearance {
+  animation: 
+    fadeInUp 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards, 
+    float 4s ease-in-out infinite 1.4s;
+}
