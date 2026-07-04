@@ -402,7 +402,6 @@
                 </button>
 
                 <div class="absolute bottom-2 right-2 bg-black/50 backdrop-blur-md text-white font-medium text-[10px] px-2.5 py-1 rounded-full border border-white/20 pointer-events-none">
-                  👈 Geser 👉
                 </div>
               </div>
 
