@@ -1,8 +1,8 @@
 <template>
-  <!-- BACKGROUND GRADASI PASTEL CERAH SESUAI WHATSAPP IMAGE 2026-07-01 AT 10.53.56.JPEG -->
+  <!-- BACKGROUND GRADASI PASTEL CERAH -->
   <div class="min-h-screen bg-gradient-to-b from-rose-200 via-amber-100 to-sky-200 text-slate-800 font-sans antialiased">
     
-    <!-- NAVBAR (Navigasi memanggil fungsi custom scrollToSection agar velocity lebih mantap) -->
+    <!-- NAVBAR -->
     <nav class="sticky top-0 z-50 bg-white/20 backdrop-blur-md border-b border-black/5">
       <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
         <span class="font-bold text-xl tracking-wider text-slate-900">FARAH FITRIA.</span>
@@ -12,7 +12,6 @@
           <button @click="scrollToSection('pengalaman')" class="hover:text-rose-600 transition duration-300 cursor-pointer">Pengalaman</button>
           <button @click="scrollToSection('pendidikan')" class="hover:text-rose-600 transition duration-300 cursor-pointer">Pendidikan</button>
           <button @click="scrollToSection('organisasi')" class="hover:text-rose-600 transition duration-300 cursor-pointer">Organisasi & Prestasi</button>
-          <button @click="scrollToSection('kontak')" class="hover:text-rose-600 transition duration-300 cursor-pointer">Kontak</button>
         </div>
       </div>
     </nav>
@@ -114,9 +113,7 @@
         
         <!-- PT SOLUSI NUTRI SEHAT -->
         <div class="bg-white/50 backdrop-blur-md p-6 rounded-3xl border-2 border-rose-300 shadow-lg relative overflow-hidden">
-          <div class="absolute top-0 right-0 bg-rose-500 text-white font-bold text-[10px] tracking-widest uppercase px-3 py-1 rounded-bl-xl">
-            
-          </div>
+          <div class="absolute top-0 right-0 bg-rose-500 text-white font-bold text-[10px] tracking-widest uppercase px-3 py-1 rounded-bl-xl">Terbaru ✨</div>
           <div class="flex flex-wrap justify-between items-start gap-2">
             <div>
               <h3 class="font-bold text-lg text-slate-900">Product Operation and Development</h3>
@@ -250,97 +247,193 @@
       </div>
     </section>
 
-    <!-- ORGANISASI, PRESTASI & SERTIFIKASI -->
-    <section id="organisasi" class="max-w-5xl mx-auto px-6 py-12">
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="space-y-6">
-          <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
-            <span class="h-6 w-1 bg-rose-500 inline-block rounded-full"></span> Pengalaman Organisasi
-          </h2>
-          <div class="bg-white/40 p-6 rounded-3xl border border-white/60 shadow-md">
-            <span class="text-xs font-bold text-rose-700">Sep 2024 – Apr 2025</span>
-            <h3 class="font-bold text-base text-slate-900 mt-1">Sekretaris</h3>
-            <p class="text-xs font-semibold text-slate-600 mb-2">Himpunan Mahasiswa Teknologi Pangan (HIMATEPA)</p>
-            <ul class="text-xs text-slate-700 list-disc pl-4 space-y-1 text-justify">
-              <li>Membuat surat-surat administrasi resmi untuk pengajuan dari awal hingga akhir acara.</li>
-              <li>Menyusun rancangan proposal pengajuan sponsor kegiatan.</li>
-              <li>Membuat dokumen rekapitulasi laporan hasil evaluasi bulanan organisasi.</li>
-            </ul>
+    <!-- ORGANISASI, SERTIFIKASI, KONTAK & KOMPETISI -->
+    <section id="organisasi" class="max-w-5xl mx-auto px-6 py-12 mb-16">
+      <div class="grid md:grid-cols-2 gap-8 items-start">
+        
+        <!-- KOLOM KIRI: Organisasi, Sertifikasi & Kontak (Terintegrasi) -->
+        <div class="space-y-8">
+          
+          <!-- Pengalaman Organisasi -->
+          <div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+              <span class="h-6 w-1 bg-rose-500 inline-block rounded-full"></span> Pengalaman Organisasi
+            </h2>
+            <div class="bg-white/40 p-6 rounded-3xl border border-white/60 shadow-md">
+              <span class="text-xs font-bold text-rose-700">Sep 2024 – Apr 2025</span>
+              <h3 class="font-bold text-base text-slate-900 mt-1">Sekretaris</h3>
+              <p class="text-xs font-semibold text-slate-600 mb-2">Himpunan Mahasiswa Teknologi Pangan (HIMATEPA)</p>
+              <ul class="text-xs text-slate-700 list-disc pl-4 space-y-1 text-justify">
+                <li>Membuat surat-surat administrasi resmi untuk pengajuan dari awal hingga akhir acara.</li>
+                <li>Menyusun rancangan proposal pengajuan sponsor kegiatan.</li>
+                <li>Membuat dokumen rekapitulasi laporan hasil evaluasi bulanan organisasi.</li>
+              </ul>
+            </div>
           </div>
+
+          <!-- Sertifikasi Keahlian -->
+          <div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+              <span class="h-6 w-1 bg-rose-500 inline-block rounded-full"></span> Sertifikasi Keahlian
+            </h2>
+            <div class="bg-white/40 p-5 rounded-3xl border border-white/60 shadow-md grid grid-cols-1 gap-3 text-xs text-slate-700 font-medium">
+              <div class="p-3 bg-white/30 rounded-xl border border-white/40 flex items-center gap-3">
+                <span class="text-rose-500 text-lg">✔️</span> Pelayanan & Penyajian Makanan
+              </div>
+              <div class="p-3 bg-white/30 rounded-xl border border-white/40 flex items-center gap-3">
+                <span class="text-rose-500 text-lg">✔️</span> Pembuatan Makanan Indonesia
+              </div>
+              <div class="p-3 bg-white/30 rounded-xl border border-white/40 flex items-center gap-3">
+                <span class="text-rose-500 text-lg">✔️</span> Pembuatan Produk Bakery
+              </div>
+              <div class="p-3 bg-white/30 rounded-xl border border-white/40 flex items-center gap-3">
+                <span class="text-rose-500 text-lg">✔️</span> Pembuatan Makanan Kontinental
+              </div>
+            </div>
+          </div>
+
+          <!-- Informasi Kontak (Dipindahkan ke kiri agar layout seimbang) -->
+          <div id="kontak" class="pt-2">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+              <span class="h-6 w-1 bg-rose-500 inline-block rounded-full"></span> Informasi Kontak
+            </h2>
+            <div class="bg-white/40 p-6 rounded-3xl border border-white/60 shadow-md grid grid-cols-1 gap-4">
+              <div class="bg-white/50 p-4 rounded-2xl border border-white/80 shadow-sm flex items-center gap-3 hover:border-rose-300 transition">
+                <span class="text-xl">✉️</span>
+                <div>
+                  <p class="text-[10px] font-bold text-rose-700 uppercase tracking-wider">Email</p>
+                  <p class="text-xs font-semibold text-slate-800">farahhhfitria@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="bg-white/50 p-4 rounded-2xl border border-white/80 shadow-sm flex items-center gap-3 hover:border-rose-300 transition">
+                <span class="text-xl">📞</span>
+                <div>
+                  <p class="text-[10px] font-bold text-rose-700 uppercase tracking-wider">WhatsApp</p>
+                  <p class="text-xs font-semibold text-slate-800">088210338174</p>
+                </div>
+              </div>
+
+              <div class="bg-white/50 p-4 rounded-2xl border border-white/80 shadow-sm flex items-center gap-3 hover:border-rose-300 transition overflow-hidden">
+                <span class="text-xl">🔗</span>
+                <div class="overflow-hidden w-full">
+                  <p class="text-[10px] font-bold text-rose-700 uppercase tracking-wider">LinkedIn</p>
+                  <p class="text-xs font-semibold text-slate-800 truncate">linkedin.com/in/farah-fitria-amalia-239361227</p>
+                </div>
+              </div>
+
+              <div class="bg-white/50 p-4 rounded-2xl border border-white/80 shadow-sm flex items-start gap-3 hover:border-rose-300 transition">
+                <span class="text-xl mt-0.5">📍</span>
+                <div>
+                  <p class="text-[10px] font-bold text-rose-700 uppercase tracking-wider">Alamat Rumah</p>
+                  <p class="text-xs font-semibold text-slate-800 leading-relaxed">
+                    Jalan Madrasah II No. 54, RT 01/RW 02, Sukabumi Utara, Kebon Jeruk, Jakarta Barat 11540.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
+        <!-- KOLOM KANAN: Kompetisi (Foto -> Judul -> Deskripsi dengan Slider di PKM) -->
         <div class="space-y-6">
           <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
-            <span class="h-6 w-1 bg-rose-500 inline-block rounded-full"></span> Kompetisi & Penghargaan
+            <span class="h-6 w-1 bg-rose-500 inline-block rounded-full"></span> Kompetensi & Penghargaan
           </h2>
-          <div class="space-y-4">
-            <div class="bg-white/60 p-4 rounded-2xl border border-white flex gap-3">
-              <span class="text-xl">🥇</span>
-              <div>
-                <h4 class="font-bold text-xs text-slate-900">Juara 1 Lomba Business Plan Competition (2025)</h4>
-                <p class="text-[11px] text-slate-700">Inovasi Dragonana Fruits Strip dengan tema "Zero waste food processing solusi teknologi tepat untuk mengolah komoditi pangan lokal" — Universitas Sahid.</p>
+          <div class="space-y-6">
+            
+            <!-- Juara 1 Business Plan -->
+            <div class="bg-white/60 p-4 sm:p-5 rounded-3xl border border-white shadow-sm hover:shadow-md hover:border-rose-300 transition duration-300 flex flex-col gap-3 group">
+              <!-- Foto Kegiatan -->
+              <div class="w-full h-40 sm:h-48 rounded-2xl overflow-hidden bg-slate-200 border border-black/5 shadow-inner">
+                <img src="/juara1.jpeg" alt="Kegiatan Juara 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
               </div>
-            </div>
-            <div class="bg-white/60 p-4 rounded-2xl border border-white flex gap-3">
-              <span class="text-xl">🥉</span>
-              <div>
-                <h4 class="font-bold text-xs text-slate-900">Juara 3 Lomba Business Plan (2025)</h4>
-                <p class="text-[11px] text-slate-700">Tema "Produk Berbasis Kedelai" — Diselenggarakan oleh The US Soybean Export Council (USSEC), Universitas Sahid, dan Sandination.</p>
+              <!-- Judul -->
+              <div class="flex items-center gap-3 mt-1">
+                <span class="text-2xl shrink-0">🥇</span>
+                <h4 class="font-bold text-sm text-slate-900 leading-snug">Juara 1 Lomba Business Plan Competition (2025)</h4>
               </div>
+              <!-- Deskripsi -->
+              <p class="text-xs text-slate-700 leading-relaxed text-justify">
+                Inovasi Dragonana Fruits Strip dengan tema "Zero waste food processing solusi teknologi tepat untuk mengolah komoditi pangan lokal" — Universitas Sahid.
+              </p>
             </div>
-            <div class="bg-white/60 p-4 rounded-2xl border border-white flex gap-3">
-              <span class="text-xl">🧬</span>
-              <div>
-                <h4 class="font-bold text-xs text-slate-900">Penerima Hibah Pendanaan PKM-RE (2024 & 2025)</h4>
-                <p class="text-[11px] text-slate-700">Lolos seleksi ketat hibah riset eksakta nasional oleh KEMENDIKBUDRISTEK RI selama dua tahun berturut-turut.</p>
+
+            <!-- Juara 3 Business Plan -->
+            <div class="bg-white/60 p-4 sm:p-5 rounded-3xl border border-white shadow-sm hover:shadow-md hover:border-rose-300 transition duration-300 flex flex-col gap-3 group">
+              <!-- Foto Kegiatan -->
+              <div class="w-full h-40 sm:h-48 rounded-2xl overflow-hidden bg-slate-200 border border-black/5 shadow-inner">
+                <img src="/juara3.jpeg" alt="Kegiatan Juara 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
               </div>
+              <!-- Judul -->
+              <div class="flex items-center gap-3 mt-1">
+                <span class="text-2xl shrink-0">🥉</span>
+                <h4 class="font-bold text-sm text-slate-900 leading-snug">Juara 3 Lomba Business Plan (2025)</h4>
+              </div>
+              <!-- Deskripsi -->
+              <p class="text-xs text-slate-700 leading-relaxed text-justify">
+                Tema "Produk Berbasis Kedelai" — Diselenggarakan oleh The US Soybean Export Council (USSEC), Universitas Sahid, dan Sandination.
+              </p>
             </div>
+
+            <!-- Penerima Hibah PKM-RE (DENGAN SLIDER UNTUK 2 FOTO) -->
+            <div class="bg-white/60 p-4 sm:p-5 rounded-3xl border border-white shadow-sm hover:shadow-md hover:border-rose-300 transition duration-300 flex flex-col gap-3 group">
+              
+              <!-- Container Slider -->
+<!-- Container Slider -->
+<div class="relative w-full h-40 sm:h-48 rounded-2xl overflow-hidden border border-black/5 shadow-inner group/slider">
+  <!-- Wrapper Flex Horisontal -->
+  <div
+    ref="pkmSlider"
+    class="flex w-full h-full overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar bg-slate-200"
+  >
+    <!-- Foto Pertama -->
+    <img src="/pkm1.jpeg" alt="Kegiatan Hibah PKM 1" class="w-full h-full object-cover shrink-0 snap-center" />
+    <!-- Foto Kedua -->
+    <img src="/pkm2.jpeg" alt="Kegiatan Hibah PKM 2" class="w-full h-full object-cover shrink-0 snap-center" />
+  </div>
+
+  <!-- Tombol Panah Kiri -->
+  <button
+    @click="scrollPkm('left')"
+    aria-label="Sebelumnya"
+    class="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center rounded-full bg-white/90 backdrop-blur-md text-slate-800 shadow-lg border border-white/60 opacity-90 hover:opacity-100 hover:bg-white hover:scale-110 active:scale-95 transition-all duration-200 cursor-pointer"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="15 18 9 12 15 6"></polyline>
+    </svg>
+  </button>
+
+  <!-- Tombol Panah Kanan -->
+  <button
+    @click="scrollPkm('right')"
+    aria-label="Berikutnya"
+    class="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center rounded-full bg-white/90 backdrop-blur-md text-slate-800 shadow-lg border border-white/60 opacity-90 hover:opacity-100 hover:bg-white hover:scale-110 active:scale-95 transition-all duration-200 cursor-pointer"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </button>
+
+  <!-- Indikator Geser -->
+  <div class="absolute bottom-2 right-2 bg-black/50 backdrop-blur-md text-white font-medium text-[10px] px-2.5 py-1 rounded-full border border-white/20 pointer-events-none">
+  </div>
+</div>
+
+<!-- Judul -->
+<div class="flex items-center gap-3 mt-1">
+  <span class="text-2xl shrink-0">🧬</span>
+  <h4 class="font-bold text-sm text-slate-900 leading-snug">Penerima Hibah Pendanaan PKM-RE (2024 & 2025)</h4>
+</div>
+<!-- Deskripsi -->
+<p class="text-xs text-slate-700 leading-relaxed text-justify">
+  Lolos seleksi ketat hibah riset eksakta nasional oleh KEMENDIKBUDRISTEK RI selama dua tahun berturut-turut.
+</p>
+
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- KONTAK VIEW-ONLY CARDS -->
-    <section id="kontak" class="max-w-5xl mx-auto px-6 py-16 mb-16">
-      <div class="bg-white/40 backdrop-blur-md p-8 rounded-3xl border border-white/60 shadow-lg text-center max-w-2xl mx-auto">
-        <h2 class="text-2xl font-bold text-slate-900 mb-2">Informasi Kontak</h2>
-        <p class="text-xs text-slate-600 mb-8">Silakan tinjau profil profesional saya melalui detail resmi di bawah ini:</p>
-        
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto text-left">
-          <div class="bg-white/50 p-4 rounded-2xl border border-white/80 shadow-sm flex items-center gap-3">
-            <span class="text-xl">✉️</span>
-            <div>
-              <p class="text-[10px] font-bold text-rose-700 uppercase tracking-wider">Email</p>
-              <p class="text-xs font-semibold text-slate-800">farahhhfitria@gmail.com</p>
-            </div>
-          </div>
-
-          <div class="bg-white/50 p-4 rounded-2xl border border-white/80 shadow-sm flex items-center gap-3">
-            <span class="text-xl">📞</span>
-            <div>
-              <p class="text-[10px] font-bold text-rose-700 uppercase tracking-wider">WhatsApp</p>
-              <p class="text-xs font-semibold text-slate-800">088210338174</p>
-            </div>
-          </div>
-
-          <div class="bg-white/50 p-4 rounded-2xl border border-white/80 shadow-sm flex items-center gap-3 sm:col-span-2">
-            <span class="text-xl">🔗</span>
-            <div class="overflow-hidden">
-              <p class="text-[10px] font-bold text-rose-700 uppercase tracking-wider">LinkedIn</p>
-              <p class="text-xs font-semibold text-slate-800 truncate">linkedin.com/in/farah-fitria-amalia-239361227</p>
-            </div>
-          </div>
-
-          <div class="bg-white/50 p-4 rounded-2xl border border-white/80 shadow-sm flex items-start gap-3 sm:col-span-2">
-            <span class="text-xl mt-0.5">📍</span>
-            <div>
-              <p class="text-[10px] font-bold text-rose-700 uppercase tracking-wider">Alamat Rumah</p>
-              <p class="text-xs font-semibold text-slate-800 leading-relaxed">
-                Jalan Madrasah II Nomor 54, RT 01/RW 02, Kelurahan Sukabumi Utara, Kecamatan Kebon Jeruk, Kota Administrasi Jakarta Barat, DKI Jakarta 11540.
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -353,21 +446,34 @@
 </template>
 
 <script setup>
-// Fungsi kustom untuk transisi bergulir berkecepatan tinggi (high velocity easing)
-const scrollToSection = (id) => {
-  const element = document.getElementById(id);
-  if (element) {
-    const offset = 80; // Jarak kompensasi tinggi navbar
-    const bodyRect = document.body.getBoundingClientRect().top;
-    const elementRect = element.getBoundingClientRect().top;
-    const elementPosition = elementRect - bodyRect;
-    const offsetPosition = elementPosition - offset;
+import { ref } from 'vue'
 
-    // Pergerakan instan berkecepatan tinggi yang dikontrol halus lewat window.scrollTo
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: 'smooth'
-    });
+const pkmSlider = ref(null)
+
+function scrollPkm(direction) {
+  if (!pkmSlider.value) return
+  const scrollAmount = pkmSlider.value.clientWidth
+  pkmSlider.value.scrollBy({
+    left: direction === 'left' ? -scrollAmount : scrollAmount,
+    behavior: 'smooth'
+  })
+}
+
+const scrollToSection = (id) => {
+  const el = document.getElementById(id)
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' })
   }
-};
+}
 </script>
+
+<style scoped>
+/* Menyembunyikan scrollbar bawah bawaan browser untuk slider foto agar lebih rapi */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+</style>
